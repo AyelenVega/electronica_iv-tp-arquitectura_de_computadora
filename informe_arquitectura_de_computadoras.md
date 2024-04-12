@@ -17,11 +17,11 @@ Luego, encontramos el software que maneja la realización de las distintas tarea
 
 ## Clases de arquitectura de computadora
 
->Dos tipos de arquitecturas importantes son la arquitectura de Von Neumann y la arquitectura de Harvard.
+Dos tipos de arquitecturas importantes son la arquitectura de Von Neumann y la arquitectura de Harvard.
 La arquitectura de Von Neumann tiene 5 unidades básicas: unidad de entrada, unidad de memoria, unidad aritmética lógica (ALU), unidad de control y unidad de salida. La unidad central de proceso (CPU) es el nombre que se le da al conjunto de la unidad de control y la unidad aritmética lógica. 
->La unidad de entrada provee la información e instrucciones necesarias para realizar las distintas tareas, las cuales son guardadas en la unidad de memoria. La unidad aritmética lógica (ALU) realiza distintas operaciones a partir de los datos guardados en la memoria y los resultados de estas operaciones son enviados a la unidad de salida. La unidad de control es la que le da las indicaciones a la unidad aritmética lógica.
->En resumen, la arquitectura de Von Neumann es aquella en la que se utiliza la misma unidad de memoria para almacenar tanto datos como instrucciones y sus módulos básicos son el CPU, las memorias y las unidades de entrada y salida.
->A diferencia de la arquitectura de Von Neumann, en la arquitectura de Harvard se utilizan memorias separadas para almacenar datos e instrucciones
+La unidad de entrada provee la información e instrucciones necesarias para realizar las distintas tareas, las cuales son guardadas en la unidad de memoria. La unidad aritmética lógica (ALU) realiza distintas operaciones a partir de los datos guardados en la memoria y los resultados de estas operaciones son enviados a la unidad de salida. La unidad de control es la que le da las indicaciones a la unidad aritmética lógica.
+En resumen, la arquitectura de Von Neumann es aquella en la que se utiliza la misma unidad de memoria para almacenar tanto datos como instrucciones y sus módulos básicos son el CPU, las memorias y las unidades de entrada y salida.
+A diferencia de la arquitectura de Von Neumann, en la arquitectura de Harvard se utilizan memorias separadas para almacenar datos e instrucciones
 
 Otros tipos de arquitecturas son la RISC y la CISC
 En la arquitectura RISC (Reduced Instruction Set Computer) lo que se busca es disminuir el tiempo de ejecución por lo que se simplifican las instrucciones. 
