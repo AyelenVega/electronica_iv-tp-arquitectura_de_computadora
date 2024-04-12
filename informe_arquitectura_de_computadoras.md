@@ -48,7 +48,7 @@ A la hora de elegir un determinado tipo de arquitectura deberíamos tener en cue
 
 ## Bibliografía
 
-Harris, S. L., & Harris, D. (2015). Digital design and computer architecture. Waltham, Mass Morgan Kaufmann.    
+Harris, S. L., & Harris, D. (2015). Digital design and computer architecture. Morgan Kaufmann.    
 Hennessy, J. L., & Patterson, D. A. (2019). Computer architecture: a quantitative approach. Morgan Kaufmann.    
 Morris Mano, M. (1994). Arquitectura de computadoras. Pearson Educación.    
 Murdocca, M., & Heuring, V. P. (2002). Principios de arquitectura de computadoras. Pearson Educación.   
