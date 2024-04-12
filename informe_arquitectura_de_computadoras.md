@@ -53,5 +53,5 @@ Hennessy, J. L., & Patterson, D. A. (2019). Computer architecture: a quantitativ
 Morris Mano, M. (1994). Arquitectura de computadoras. Pearson Educación.    
 Murdocca, M., & Heuring, V. P. (2002). Principios de arquitectura de computadoras. Pearson Educación.   
 Quiroga, I. P. (2010). Arquitectura de computadoras. Alfaomega.     
-Stallings, W. (2005). Organización y arquitectura de computadores. Pearson Educación.   
+Stallings, W. (2006). Organización y arquitectura de computadores. Pearson Educación.   
 
