@@ -52,10 +52,10 @@ A la hora de elegir un determinado tipo de arquitectura deberíamos tener en cue
 
 ## Bibliografía
 
-ARM. (2017). ARMv7-M Architecture Reference Manual. 
-Harris, S. L., & Harris, D. (2015). Digital Design and Computer Architecture. Morgan Kaufmann.    
-Patterson, D. A., & Hennessy, J. L. (2014). Computer Organization and Design: The Hardware/Software Interface. Morgan Kaufmann.    
-Morris Mano, M. (1994). Arquitectura de Computadoras. Pearson Educación.    
-Murdocca, M., & Heuring, V. P. (2002). Principios de Arquitectura de Computadoras. Pearson Educación.   
-Quiroga, I. P. (2010). Arquitectura de Computadoras. Alfaomega.     
-Stallings, W. (2016). Computer Organization and Architecture: Designing for Performance. Pearson.  
+1. ARM. (2017). ARMv7-M Architecture Reference Manual. 
+2. Harris, S. L., & Harris, D. (2015). Digital Design and Computer Architecture. Morgan Kaufmann.    
+3. Patterson, D. A., & Hennessy, J. L. (2014). Computer Organization and Design: The Hardware/Software Interface. Morgan Kaufmann.    
+4. Morris Mano, M. (1994). Arquitectura de Computadoras. Pearson Educación.    
+5. Murdocca, M., & Heuring, V. P. (2002). Principios de Arquitectura de Computadoras. Pearson Educación.   
+6. Quiroga, I. P. (2010). Arquitectura de Computadoras. Alfaomega.     
+7. Stallings, W. (2016). Computer Organization and Architecture: Designing for Performance. Pearson.  
