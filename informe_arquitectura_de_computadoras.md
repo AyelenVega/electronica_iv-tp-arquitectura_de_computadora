@@ -24,7 +24,17 @@ La unidad de entrada provee la información e instrucciones necesarias para real
 En resumen, la arquitectura de Von Neumann es aquella en la que se utiliza la misma unidad de memoria para almacenar tanto datos como instrucciones y sus módulos básicos son el CPU, las memorias y las unidades de entrada y salida.  
 A diferencia de la arquitectura de Von Neumann, en la arquitectura de Harvard se utilizan memorias separadas para almacenar datos e instrucciones (Murdocca, 2002; Quiroga, 2010; Stallings, 2016).   
 
-La máquina de pilas se caracteriza por la estructura en forma de pila que utiliza para el almacenamiento de datos. En cambio, la máquina de registros cuenta con más de un registro donde almacena datos. En la máquina de acumulador se utiliza un único registro en donde se guarda el resultado de las operaciones, es decir, utiliza únicamente un acumulador que es un registro de uso general en donde se guardan temporalmente los datos de las operaciones (Stallings, 2016).    
+La máquina de pilas se caracteriza por la estructura en forma de pila que utiliza para el almacenamiento de datos. Una pila es una estructura de almacenamiento de datos, en la que sus elementos se añaden y quitan solo a traves de su parte superior. Se caracteriza por el modo de acceso LIFO (last-in, first-out), en donde el ultimo elemento que se añade es el primero que se quita. En este tipo de maquina los operandos son implicitos (Beltrán y Guzmán, 2010; Aguilar y Martinez, 2002).
+
+![alt text](maquina_pila.png) 
+
+En cambio, la máquina de registros cuenta con más de un registro donde almacena datos. En este tipo de maquina, los operandos son explícitos y se puede permitir que alguno o todos los operandos esten en la memoria (Beltrán y Guzmán, 2010).
+
+![alt text](maquina_registro.png)
+
+En la máquina de acumulador se utiliza un único registro en donde se guarda el resultado de las operaciones, es decir, utiliza únicamente un acumulador que es un registro de uso general en donde se guardan temporalmente los datos de las operaciones. En este tipo de máquina, el operando que se encuentra en el acumulador es implicito y el otro es explicito (Stallings, 2016; Beltrán y Guzmán, 2010).    
+
+![alt text](maquina_acumulador.png)
 
 Otros tipos de arquitecturas son la RISC y la CISC.     
 En la arquitectura RISC (Reduced Instruction Set Computer) lo que se busca es disminuir el tiempo de ejecución por lo que se simplifican las instrucciones. Una característica de este tipo de arquitectura es que tiene pocas instrucciones y estas instrucciones son simples y fáciles de decodificar. Además, como las instrucciones son más simples, también se hacen más sencillas las operaciones de control. Otra característica es que el formato de las instrucciones no varía.    
@@ -33,19 +43,31 @@ En cambio, en la arquitectura CISC (Complex Instruction Set Computer) las instru
 
 ## Partes de una arquitectura de computadora
 
-Una computadora está formada principalmente por:        
+Una computadora está formada principalmente por:    
+
 -Unidad Central de Procesamiento (CPU) la cual se encarga de procesar los datos y llevar a cabo las distintas operaciones. El CPU, a su vez, está formado por otros componentes como la unidad aritmética lógica (ALU) que se encarga de realizar las operaciones, registros para almacenar datos dentro del CPU y las unidades de control que se encargan de leer los datos almacenados en la memoria y de llevar a cabo distintas instrucciones. También nos solemos referir a esta unidad con el nombre de "procesador". 
 -Memoria principal, en donde se almacenan los datos y programas. La memoria de una computadora esta formada por un conjunto de registros los cuales se encuentran numerados y en donde se almacenan los datos.      
 -Módulos de entrada y salida (E/S), los cuales se encargan del ingreso y salida de datos, es decir, relaciona a la computadora con el mundo exterior.       
 -Bus de datos, que comunica las distintas partes de la computadora. Los buses de datos se encargan de recoger toda la información e instrucciones y de relacionar los distintos módulos (Stallings, 2016; Morris, 1994, Quiroga, 2010). 
 
+
+![alt text](estructura_computadora.png)
+
+
+
+## Arquitectura ARM
+
 Una de las arquitecturas más frecuentes o populares para dispositivos embebidos es la arquitectura ARM. Una característica de la arquitectura ARM es que posee una gran cantidad de modos de direccionamiento. Además, se basa en la arquitectura RISC.     
 La arquitectura ARMv7-M pertenece a la familia ARM. Este tipo de arquitectura soporta distintos tipos de datos en su memoria, como el byte, la media palabra y la palabra. La arquitectura ARMv7-M se utiliza para aplicaciones en microcontroladores y se destaca por su alto rendimiento (Patterson y Hennessy, 2014; ARM, 2017).      
+La arquitectura ARMv7-M es una máquina de registros, puesto que cuenta con numerosos registros que sirven para realizar distintas operaciones, es decir, las operaciones se realizan por medio del uso de registros en lugar de trabajar de manera directa con la memoria principal. Además, se puede clasificar dentro del tipo de arquitectura RISC, de donde proviene su nombre ("Advanced Risc Machine"). 
+La implementacion fisica (microarquitectura) de la arquitectura ARMv7-M es de tipo Harvard modificada, donde los buses de datos y programa estan separados a pesar de que los datos y programas se encuentran almacenados en la misma memoria. Sin embargo, la logica que utiliza corresponde a la arquitectura Von Neumann.
+
+
 
 ## Conclusiones
 
-En base a lo discutido anteriormente, podemos concluir que la arquitectura de computadoras está relacionada con el diseño interno y el funcionamiento de la computadora, es decir, con los distintos módulos que la componen y las instrucciones que ejecuta. Si descomponemos la computadora en distintos niveles, la arquitectura ocuparía uno de los niveles superiores, ya que, como se explicó anteriormente, este concepto no está relacionado al diseño circuital o a las características físicas de la computadora. 
-A la hora de elegir un determinado tipo de arquitectura deberíamos tener en cuenta, por ejemplo, la complejidad de las operaciones a realizar y la rapidez con las que debe ejecutarlas.      
+En base a lo discutido anteriormente, podemos concluir que la arquitectura de computadoras está relacionada con el diseño interno y el funcionamiento de la computadora, es decir, con los distintos módulos que la componen, las instrucciones que ejecuta y como interactúan con el software. Si descomponemos la computadora en distintos niveles, la arquitectura ocuparía uno de los niveles superiores, ya que, como se explicó anteriormente, este concepto no está relacionado al diseño circuital o a las características físicas de la computadora. La arquitectura de computadora cumple un papel fundamental en la creacion de un modelo que le permite al programador comprender el funcionamiento de la computadora sin necesidad de conocer su implementacion fisica, ademas de que permite definir cómo interactuan el hardware y el software.
+Por lo tanto, a la hora de elegir un determinado tipo de arquitectura deberíamos tener en cuenta la complejidad de las operaciones a realizar y la rapidez con las que debe ejecutarlas, el costo del hardware y otros elementos asociados, la compatibilidad con el software existente y demás entornos a usar, el rendimiento y el tipo de aplicación que se le dará al sistema.
 
 
 ## Bibliografía
@@ -57,3 +79,5 @@ A la hora de elegir un determinado tipo de arquitectura deberíamos tener en cue
 5. Murdocca, M., & Heuring, V. P. (2002). Principios de Arquitectura de Computadoras. Pearson Educación.   
 6. Quiroga, I. P. (2010). Arquitectura de Computadoras. Alfaomega.     
 7. Stallings, W. (2016). Computer Organization and Architecture: Designing for Performance. Pearson.  
+8. Beltrán, M., Guzmán A. (2010). Diseño y Evaluación de Arquitecturas de Computadoras. Pearson Pretince Hall.
+9. Luis Joyanes Aguilar, Ignacio Zahonero Martinez (2002). Programación en C
