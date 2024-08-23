@@ -25,7 +25,7 @@ En resumen, la arquitectura de Von Neumann es aquella en la que se utiliza la mi
 A diferencia de la arquitectura de Von Neumann, en la arquitectura de Harvard se utilizan memorias separadas para almacenar datos e instrucciones (Murdocca, 2002; Quiroga, 2010; Stallings, 2016).   
 
 La máquina de pilas se caracteriza por la estructura en forma de pila que utiliza para el almacenamiento de datos. Una pila es una estructura de almacenamiento de datos, en la que sus elementos se añaden y quitan solo a traves de su parte superior. Se caracteriza por el modo de acceso LIFO (last-in, first-out), en donde el último elemento que se añade es el primero que se quita. En este tipo de máquina los operandos son implícitos y siempre se encuentran en la parte superior de la pila. 
-Una de las ventajas es la simplicidad del codigo, puesto que no es necesario especificar los operandos, sin embargo este tipo de arquitectura es menos eficiente que las otras. (Beltrán y Guzmán, 2010; Aguilar y Martinez, 2002).
+Una de las ventajas es la simplicidad del codigo, puesto que no es necesario especificar los operandos, sin embargo este tipo de arquitectura es menos eficiente que las otras (Beltrán y Guzmán, 2010; Aguilar y Martinez, 2002).
 
 ![alt text](maquina_pila.png) 
 
