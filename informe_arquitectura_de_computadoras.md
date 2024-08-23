@@ -24,15 +24,16 @@ La unidad de entrada provee la información e instrucciones necesarias para real
 En resumen, la arquitectura de Von Neumann es aquella en la que se utiliza la misma unidad de memoria para almacenar tanto datos como instrucciones y sus módulos básicos son el CPU, las memorias y las unidades de entrada y salida.  
 A diferencia de la arquitectura de Von Neumann, en la arquitectura de Harvard se utilizan memorias separadas para almacenar datos e instrucciones (Murdocca, 2002; Quiroga, 2010; Stallings, 2016).   
 
-La máquina de pilas se caracteriza por la estructura en forma de pila que utiliza para el almacenamiento de datos. Una pila es una estructura de almacenamiento de datos, en la que sus elementos se añaden y quitan solo a traves de su parte superior. Se caracteriza por el modo de acceso LIFO (last-in, first-out), en donde el ultimo elemento que se añade es el primero que se quita. En este tipo de maquina los operandos son implicitos (Beltrán y Guzmán, 2010; Aguilar y Martinez, 2002).
+La máquina de pilas se caracteriza por la estructura en forma de pila que utiliza para el almacenamiento de datos. Una pila es una estructura de almacenamiento de datos, en la que sus elementos se añaden y quitan solo a traves de su parte superior. Se caracteriza por el modo de acceso LIFO (last-in, first-out), en donde el último elemento que se añade es el primero que se quita. En este tipo de máquina los operandos son implícitos y siempre se encuentran en la parte superior de la pila. 
+Una de las ventajas es la simplicidad del codigo, puesto que no es necesario especificar los operandos, sin embargo este tipo de arquitectura es menos eficiente que las otras. (Beltrán y Guzmán, 2010; Aguilar y Martinez, 2002).
 
 ![alt text](maquina_pila.png) 
 
-En cambio, la máquina de registros cuenta con más de un registro donde almacena datos. En este tipo de maquina, los operandos son explícitos y se puede permitir que alguno o todos los operandos esten en la memoria (Beltrán y Guzmán, 2010).
+La máquina de registros cuenta con más de un registro donde almacena datos. En este tipo de maquina, los operandos son explícitos y se puede permitir que alguno o todos los operandos esten en la memoria. Pueden haber dos operandos (en el caso en que el resultado de la operacion se guarde en uno de los operandos fuente) o tres operandos (Beltrán y Guzmán, 2010).
 
 ![alt text](maquina_registro.png)
 
-En la máquina de acumulador se utiliza un único registro en donde se guarda el resultado de las operaciones, es decir, utiliza únicamente un acumulador que es un registro de uso general en donde se guardan temporalmente los datos de las operaciones. En este tipo de máquina, el operando que se encuentra en el acumulador es implicito y el otro es explicito (Stallings, 2016; Beltrán y Guzmán, 2010).    
+En la máquina de acumulador se utiliza un único registro en donde se guarda el resultado de las operaciones, es decir, utiliza únicamente un acumulador que es un registro de uso general en donde se guardan temporalmente los datos de las operaciones. En este tipo de máquina, el operando que se encuentra en el acumulador es implicito y el otro es explicito y una de sus ventajas es la simplicidad del conjunto de instrucciones (Stallings, 2016; Beltrán y Guzmán, 2010).    
 
 ![alt text](maquina_acumulador.png)
 
@@ -66,7 +67,10 @@ La implementacion fisica (microarquitectura) de la arquitectura ARMv7-M es de ti
 
 ## Conclusiones
 
-En base a lo discutido anteriormente, podemos concluir que la arquitectura de computadoras está relacionada con el diseño interno y el funcionamiento de la computadora, es decir, con los distintos módulos que la componen, las instrucciones que ejecuta y como interactúan con el software. Si descomponemos la computadora en distintos niveles, la arquitectura ocuparía uno de los niveles superiores, ya que, como se explicó anteriormente, este concepto no está relacionado al diseño circuital o a las características físicas de la computadora. La arquitectura de computadora cumple un papel fundamental en la creacion de un modelo que le permite al programador comprender el funcionamiento de la computadora sin necesidad de conocer su implementacion fisica, ademas de que permite definir cómo interactuan el hardware y el software.
+En base a lo discutido anteriormente, podemos concluir que la arquitectura de computadoras está relacionada con el diseño interno y el funcionamiento de la computadora, es decir, con los distintos módulos que la componen, las instrucciones que ejecuta y como interactúan con el software. A diferencia del diseño circuital o las características físicas del hardware, la arquitectura se centra en la organización y comportamiento del sistema desde una perspectiva más abstracta.
+
+ Si descomponemos la computadora en distintos niveles, la arquitectura ocuparía uno de los niveles superiores, ya que, como se explicó anteriormente, este concepto no está relacionado al diseño circuital o a las características físicas de la computadora. La arquitectura de computadora cumple un papel fundamental en la creacion de un modelo que le permite al programador comprender el funcionamiento de la computadora sin necesidad de conocer su implementacion fisica, ademas de que permite definir cómo interactuan el hardware y el software.
+
 Por lo tanto, a la hora de elegir un determinado tipo de arquitectura deberíamos tener en cuenta la complejidad de las operaciones a realizar y la rapidez con las que debe ejecutarlas, el costo del hardware y otros elementos asociados, la compatibilidad con el software existente y demás entornos a usar, el rendimiento y el tipo de aplicación que se le dará al sistema.
 
 
